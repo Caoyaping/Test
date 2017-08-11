@@ -1,0 +1,20 @@
+
+//JNIEXPORT void JNICALL Java_JniMain_giveArray
+//(JNIEnv * env, jobject jobj,jintArray arr){
+//
+//	int compare(jint *a, jint *b);
+//
+//	jint *elemts = (*env)->GetIntArrayElements(env,arr,NULL);//调用以get*** 开头的额   最后release可能的内存。
+//	//内存不够的时候可能为空
+//	if (elemts == NULL){
+//		return;
+//	}
+//	int len = (*env)->GetArrayLength(env, arr);
+//	qsort(elemts,len,sizeof(jint),compare);
+//
+//	//将JNI  修改过的数据重新天回原来的数组。
+//	(*env)->ReleaseIntArrayElements(env, arr, elemts, JNI_COMMIT);
+//	
+//
+//}
+//
